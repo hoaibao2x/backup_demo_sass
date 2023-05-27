@@ -1,0 +1,18 @@
+.header h2 {
+  color: aqua;
+  font-size: 60px; }
+  @media screen and (max-width: 768px) {
+    .header h2 {
+      color: blue;
+      font-size: 40px;
+      font-weight: bold; } }
+  @media screen and (max-width: 576px) {
+    .header h2 {
+      color: hotpink;
+      font-size: 30px; } }
+
+footer h1 {
+  color: hotpink;
+  font-size: 40px; }
+
+/*# sourceMappingURL=style.css.map */

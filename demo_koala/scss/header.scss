@@ -1,0 +1,15 @@
+.header {
+    h2 {
+        color: aqua;
+        font-size: 60px;
+        @media screen and (max-width: 768px) {
+            color: blue;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 576px) {
+            color: hotpink;
+            font-size: 30px;
+        }
+    }
+}

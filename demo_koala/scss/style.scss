@@ -1,0 +1,168 @@
+// $about-heading-color: red;
+// $about-heading-font-size: 40px;
+// $about-heading-letter-spacing: 10px;
+// $about-heading-margin-top: 10px;
+
+// h1 {
+//     color: $about-heading-color;
+//     font-size: $about-heading-font-size;
+//     letter-spacing: $about-heading-letter-spacing;
+//     margin-top: $about-heading-margin-top;
+// }
+
+// .header {
+//     h2 {
+//         font: {
+//             size: 40px;
+//             weight: normal;
+//         }
+
+//         color: blue;
+
+//         &:hover {
+//             color: yellow;
+//         }
+//     }
+
+//     span {
+//         color: red;
+//         letter-spacing: 10px;
+//     }
+
+//     p {
+//         color: green;
+//         margin-top: 40px;
+//     }
+// }
+
+// .nav {
+//     h1 {
+//         color: pink;
+//         font-size: 40px;
+//         letter-spacing: 20px;
+//     }
+// }
+
+// .contact {
+//     h1 {
+//         color: pink;
+//         font-size: 40px;
+//         letter-spacing: 20px;
+//     }
+// }
+
+
+//? Mixin: Những thuộc tính hay được sử dụng để định nghĩa một thành phần HTML nào đó
+// @mixin heading-style {
+//     color: hotpink;
+//     font-size: 40px;
+//     letter-spacing: 20px;
+// }
+
+// .nav {
+//     h1 {
+//         @include heading-style;
+//     }
+// }
+
+// .contact {
+//     h1 {
+//         @include heading-style;
+//     }
+// }
+
+
+//? Mixin có tham sô
+// @mixin heading-style($color, $font-size, $letter-spacing) {
+//     color: $color;
+//     font-size: $font-size;
+//     letter-spacing: $letter-spacing;
+//     $translate: translate(100px, 200px); // Có thể khai báo tham số trong mixin
+//     transform: $translate;
+// }
+
+// .nav {
+//     h1 {
+//         @include heading-style(hotpink, 40px, 20px);
+//     }
+// }
+
+// .contact {
+//     h1 {
+//         @include heading-style(brown, 20px, 10px);
+//     }
+// }
+
+
+
+//? extend: - Tương tự như mixin nhưng không thể thay đổi giá trị thuộc tính như mixin
+//?         - Kế thừa tất cả những thuộc tính của class đã được định nghĩa sẵn
+
+// .my-style {
+//     color: aqua;
+//     font-size: 35px;
+//     letter-spacing: 30px;
+// }
+
+// .nav {
+//     h1 {
+//         @extend .my-style;
+//         background-color: red;
+//         color: black;
+//     }
+// }
+
+
+
+//? if-else condition
+// $heading-color: black;
+
+// .contact {
+//     h1 {
+//         color: $heading-color;
+
+//         @if $heading-color==purple {
+//             background-color: green;
+//         }
+
+//         @else if $heading-color==blue {
+//             background-color: gray;
+//         }
+
+//         @else if $heading-color==yellow {
+//             background-color: aquamarine;
+//         }
+
+//         @else {
+//             background-color: hotpink;
+//         }
+//     }
+// }
+
+
+
+//? for-loop
+// @for $thamso from 1 through 3 {
+//     .heading-#{$thamso} {
+//         font-size: 20px * $thamso;
+//     }
+// }
+
+
+
+//? while-loop
+// $size: 1;
+
+// @while $size < 4 {
+//     .heading-#{$size} {
+//         font-size: 60px / $size;
+//     }
+
+//     $size: $size+1;
+// }
+
+
+
+//? Tách file scss
+@import 'header.scss';
+@import 'footer.scss';

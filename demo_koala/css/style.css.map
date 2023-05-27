@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,UAAG;EACC,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,oCAAqC;IAHzC,UAAG;MAIK,KAAK,EAAE,IAAI;MACX,SAAS,EAAE,IAAI;MACf,WAAW,EAAE,IAAI;EAErB,oCAAqC;IARzC,UAAG;MASK,KAAK,EAAE,OAAO;MACd,SAAS,EAAE,IAAI;;ACVvB,SAAG;EACC,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI",
+"sources": ["../scss/header.scss","../scss/footer.scss"],
+"names": [],
+"file": "style.css"
+}
